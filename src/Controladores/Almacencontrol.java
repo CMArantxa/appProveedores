@@ -67,6 +67,7 @@ public class Almacencontrol {
     }
 
  */
+    /*
     public boolean modificarProveedor(String cif, String nombre, String direccion, String localidad, String provincia) {
         for (Proveedor p : proveedorList) {
             if (cif.equals(p.getCif())) {
@@ -81,6 +82,17 @@ public class Almacencontrol {
         }
         return false;
     }
+
+     */
+public boolean modificarProveedor(String cif, String nombre, String direccion, String localidad, String provincia) {
+    proveedorList.stream()
+            .filter(p->cif.equals(p.getCif()))
+            .findFirst()
+            .ifPresent(p->{
+                p.setNombre(nombre);
+            });
+    return true;
+}
 }
 
 

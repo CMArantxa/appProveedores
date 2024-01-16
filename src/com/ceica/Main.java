@@ -8,7 +8,8 @@ public class Main {
         almacen.nuevoProveedor("a","nombre","dir","loc","pro");
         almacen.nuevoProveedor("b","bnombre","bdir","bloc","bpro");
         System.out.println(almacen.toString());
-        almacen.modificarProveedor("a","nombre","direccion","localidad","provincia");
+        almacen.modificarProveedor("c","nombre","direccion","localidad","provincia");
+        System.out.println(almacen.toString());
         /*
         System.out.println(almacen.toString());
         almacen.borrarProveedor("a");
