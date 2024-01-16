@@ -4,6 +4,17 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class Pedido {
+    @Override
+    public String toString() {
+        return "Pedido{" +
+                "id=" + id +"\n"+
+                ", piezas=" + piezas +"\n"+
+                ", proveedor=" + proveedor +"\n"+
+                ", fecha=" + fecha +"\n"+
+                ", cantidad=" + cantidad +"\n"+
+                '}'+"\n";
+    }
+
     private int id;
     private Piezas piezas;
     private Proveedor proveedor;

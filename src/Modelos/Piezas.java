@@ -1,6 +1,7 @@
 package Modelos;
 
 public class Piezas {
+    private static int idPieza;
     private int id;
     private String nombre;
     private String color;
@@ -8,6 +9,7 @@ public class Piezas {
     private Categoria categoria;
 
     public Piezas(String nombre, String color, Double precio) {
+        this.id=idPieza++;
         this.nombre = nombre;
         this.color = color;
         this.precio = precio;
@@ -51,6 +53,17 @@ public class Piezas {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    @Override
+    public String toString() {
+        return "Piezas{" +"\n"+
+                "id=" + id +"\n"+
+                ", nombre='" + nombre + '\n' +
+                ", color='" + color + '\n' +
+                ", precio=" + precio + "\n"+
+                ", categoria=" + categoria +"\n"+
+                '}'+"\n";
     }
 
 }
