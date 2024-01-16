@@ -33,6 +33,18 @@ private List<Pedido>pedidoList;
                 "proveedorList=" + proveedorList + "\n"+
                 ", piezasList=" + piezasList +"\n"+
                 ", pedidoList=" + pedidoList +"\n"+
-                '}';
+                '}'+"\n";
     }
+
+    public void borrarProveedor(String cif) {
+        int ProvedorList = 0;
+        for (int i = 0; i < proveedorList.size(); i++) {
+         if (cif.equals(proveedorList.get(i).getCif())){
+             proveedorList.remove(i);
+             System.out.println("Proveedor eliminado.");
+         }
+        }
+    }
+
 }
+
