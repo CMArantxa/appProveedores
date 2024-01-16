@@ -1,7 +1,7 @@
 package Modelos;
 
 public class Piezas {
-    private int id:
+    private int id;
     private String nombre;
     private String color;
     private Double precio;
