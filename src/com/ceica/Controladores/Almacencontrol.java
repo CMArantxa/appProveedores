@@ -1,6 +1,6 @@
-package Controladores;
+package com.ceica.Controladores;
 
-import Modelos.*;
+import com.ceica.Modelos.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

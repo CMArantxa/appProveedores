@@ -1,7 +1,7 @@
 package com.ceica;
 
-import Controladores.Almacencontrol;
-import Modelos.Color;
+import com.ceica.Controladores.Almacencontrol;
+import com.ceica.Modelos.Color;
 
 public class Main {
     public static void main(String[] args) {

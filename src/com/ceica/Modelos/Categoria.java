@@ -1,4 +1,4 @@
-package Modelos;
+package com.ceica.Modelos;
 
 public class Categoria {
 private int id;

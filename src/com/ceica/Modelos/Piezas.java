@@ -1,4 +1,4 @@
-package Modelos;
+package com.ceica.Modelos;
 
 public class Piezas {
     private static int idPieza;

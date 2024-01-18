@@ -1,7 +1,6 @@
-package Modelos;
+package com.ceica.Modelos;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Pedido {
     @Override
